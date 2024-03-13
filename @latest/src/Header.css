@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+header {
+  height: fit-content;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Jolly Lodger', system-ui;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  padding: 5px;
+  font-family: 'Jolly Lodger', system-ui;
+}
+
+.footer-text {
+  margin-left: 10px;
+}
+
+.text-header {
+  position: relative;
+  font-size: 2em;
+  color: white; /* Text color */
+  background: black; /* Background color */
+  overflow: hidden;
+}
