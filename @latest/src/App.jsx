@@ -1,8 +1,14 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import React from 'react';
+import Hero from './components/Hero';
+import './hero.css';
 
-function App() {
-  return <></>;
-}
+const App = () => {
+  return (
+    <div>
+      <Hero/>
+    </div>
+  );
+};
 
 export default App;
+
