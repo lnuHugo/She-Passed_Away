@@ -18,7 +18,7 @@ const ImageSlider = ({images}) => {
     return (
         <div className="image-slider">
             <button onClick={goToPrevSlide}> | </button>
-            <img src="{images[currentIndex]}" alt={`Slide ${currentIndex}`} />
+            <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
             <button onClick={goToNextSlide}> | </button>
         </div>
     );
