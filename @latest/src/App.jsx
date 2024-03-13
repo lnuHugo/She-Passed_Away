@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Popup } from "./components/Popup";
 import ImageSlider from "./components/ImageSlider";
-
+import './App.css';
+import './Header.css';
+import { useState, useEffect } from "react";
 
 function App() {
   const images = [
@@ -10,13 +13,21 @@ function App() {
     "/assets/she-past-away-1492561173.37.2560x1440.jpg",
     "/assets/shepastaway.jpg",
   ];
+  
+  return (
+    <>
 
-  return <>
-    <div className="">
+      <Header />
+    <Popup data="about"></Popup>
+        <div className="">
       <h1>She past away</h1>
       <ImageSlider images={images} />
     </div>
-  </>;
-};
+
+      <Footer />
+
+    </>
+  );
+}
 
 export default App;
