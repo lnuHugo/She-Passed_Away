@@ -12,7 +12,7 @@ header {
 }
 
 footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   height: fit-content;
   background-color: black;
