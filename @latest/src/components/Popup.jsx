@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "../Popup.css";
 import TextComponent from "./TextComponent";
 
-export const Popup = ({ data }) => {
+export const Popup = ({ isOpen, closePopup, data }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const openPopup = () => {
@@ -28,15 +28,11 @@ export const Popup = ({ data }) => {
   }
 
   return (
-    <div className="popup-div">
-      {isOpen && (
-        <div className="popup">
-          <div className="popup-content">
-            {popupContent}
-            <button onClick={closePopup}>Stäng popup</button>
-          </div>
-        </div>
-      )}
+    <div className={`popup ${isOpen ? "open" : ""}`}>
+      <div className="popup-content">
+        {popupContent}
+        <button onClick={closePopup}>Close Popup</button>
+      </div>
     </div>
   );
 };
