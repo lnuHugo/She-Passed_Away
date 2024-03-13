@@ -5,6 +5,9 @@ import ImageSlider from "./components/ImageSlider";
 import './App.css';
 import './Header.css';
 import { useState, useEffect } from "react";
+import React from 'react';
+import Hero from './components/Hero';
+import './hero.css';
 
 function App() {
   const images = [
@@ -22,6 +25,7 @@ function App() {
         <div className="">
       <h1>She past away</h1>
       <ImageSlider images={images} />
+      <Hero/>
     </div>
 
       <Footer />
@@ -31,3 +35,4 @@ function App() {
 }
 
 export default App;
+
